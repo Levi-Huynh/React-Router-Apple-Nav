@@ -35,7 +35,8 @@ shoppingToggle = () => {
         <Route path="/" render={ props => <NavBar apple={this.state.apple} {...props} shopToggle={this.shoppingToggle.bind(this)} 
         toggleMenu={this.menuShowToggle.bind(this)} menu={this.state.showMenu} shop={this.state.shopping}/>}/>
         <Route exact path="/:name" render={ props => <SubNav apple={this.state.apple} {...props}/>}/>
-        <Route path="/" component={home}/>
+        <Route exact path="/" component={home}/>
+        <Route path="/:name/Support" component={SupportPage}/>
         
 
       </div>

@@ -20,7 +20,7 @@ return (
             
         )
       })}
-          <NavLink exact className={props.menu? null : 'hidNav'} activeClassName="activeNavButton" to={`/`}>Support</NavLink>
+          <NavLink exact className={props.menu? null : 'hidNav'} activeClassName="activeNavButton" to={`/${props.apple.name}/Support`}>Support</NavLink>
           <NavLink exact  activeClassName="activeNavButton" to={`/`} onClick={props.toggleMenu.bind(this)} ><i class="fas fa-search"></i></NavLink>
           <input
           className={props.menu? 'hideInput': null}
@@ -29,7 +29,7 @@ return (
           >
           </input>
           <NavLink exact  onClick={props.shopToggle.bind(this)} className={props.menu? null : 'hidNav'}  activeClassName="activeNavButton" to={`/`}><i class="fas fa-shopping-bag"></i></NavLink>
-      <p onClick={props.toggleMenu.bind(this)} className={props.menu? 'hideInput': null}>Close Search</p>
+      <p onClick={props.toggleMenu.bind(this)} className={props.menu? 'hideInput': null}>X Close Search</p>
         
         </div>
       

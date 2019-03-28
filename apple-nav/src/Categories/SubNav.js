@@ -17,12 +17,16 @@ export default props => {
         <div className="App">
         <div className='navbar'>
         
-          <p>{nav.name}</p>
+          
           {nav.img}
              
-
+      
          
         </div>
+
+        <div>
+          <h1>Hello. This is the Apple {nav.name}.</h1>
+          </div>
       </div>
     )
   }
