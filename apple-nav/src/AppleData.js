@@ -1,14 +1,7 @@
 import React, { Component }  from 'react';
 
 export default [
-    {
-        id: 0,
-        name: 'Apple',
-        img: [
-    
-      
-        ]
-    },
+  
     {
         id: 1,
         name: 'Mac',
@@ -99,26 +92,8 @@ export default [
         <i class="fas fa-laptop-code"></i>,
       
         ]
-    },
-    {
-        id: 7,
-        name: 'Support',
-        img: [
-     
-        ]
-    },
-    {
-        id: 8,
-        name: 'Magnifier',
-        img: [
-        
-        ]
-    },
-    {
-        id: 9,
-        name: 'SuitCase',
-        img: [
-      
-        ]
     }
+   
+   
+    
 ]

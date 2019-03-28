@@ -5,9 +5,9 @@ import { NavLink} from 'react-router-dom'
 
 export default props => {
 
-  let id = props.match.params.id;
+  let name = props.match.params.name;
 
-  let nav= props.apple.find( apple => apple.id === Number(id) );
+  let nav= props.apple.find( apple => apple.name === name);
 
     const returnHome = () => {
       props.history.push("/")

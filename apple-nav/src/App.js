@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <Route path="/" render={ props => <NavBar apple={this.state.apple} {...props}/>}/>
-        <Route exact path="/:id" render={ props => <SubNav apple={this.state.apple} {...props}/>}/>
+        <Route exact path="/:name" render={ props => <SubNav apple={this.state.apple} {...props}/>}/>
         <Route path="/" component={home}/>
 
       </div>

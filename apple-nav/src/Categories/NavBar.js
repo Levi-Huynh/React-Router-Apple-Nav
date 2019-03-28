@@ -9,6 +9,7 @@ export default props => {
     return (
     
         <div className="navbar">
+        <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fab fa-apple"></i></NavLink>
         {props.apple.map(nav => {
 
      
@@ -16,13 +17,15 @@ export default props => {
          
           <div >
          
-            <NavLink exact  activeClassName="activeNavButton" to={`/${nav.id}`}> {nav.name}</NavLink>
+            <NavLink exact  activeClassName="activeNavButton" to={`/${nav.name}`}> {nav.name}</NavLink>
            
               </div>
             
         )
       })}
-
+          <NavLink exact  activeClassName="activeNavButton" to={`/`}>Support</NavLink>
+          <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fas fa-search"></i></NavLink>
+          <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fas fa-shopping-bag"></i></NavLink>
      </div>
      
     )
