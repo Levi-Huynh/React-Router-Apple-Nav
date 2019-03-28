@@ -16,7 +16,20 @@ export default [
             <i class="fas fa-headphones-alt"></i>,
             <i class="fas fa-stop-circle"></i>,
             <i class="fas fa-stop-circle"></i>
+        ],
+        product: [
+            'MacBook',
+            'MacBook Air',
+            'MacBook Pro',
+            'iMac',
+            'iMac Pro',
+            'Mac Pro',
+            'Mac mini',
+            'Accessories',
+            'Mojave',
+            'Compare'
         ]
+
     },
     {
         id: 2,
@@ -34,6 +47,18 @@ export default [
             <i class="fas fa-square"></i>,
             
         
+        ],
+        product: [
+            'iPad Pro',
+            'iPad Air',
+            'iPad',
+            'iPad mini',
+            'Compare',
+            'Apple Pencil',
+            'Smart Keyboard',
+            'Accessories',
+            'iOs12',
+            'iPad Pro',
         ]
     },
     {
@@ -48,6 +73,17 @@ export default [
         <i class="fas fa-mobile-alt"></i>,
         <i class="far fa-window-restore"></i>,
         <i class="fas fa-mobile-alt"></i>
+        ],
+        product: [
+            'iPhone',
+            'iPad Air',
+            'iPad',
+            'iPad mini',
+            'Compare',
+            'Apple Pencil',
+            'Smart Keyboard',
+            'Accessories',
+            
         ]
     },
     {
@@ -63,6 +99,17 @@ export default [
         <i class="fas fa-ring"></i>,
         <i class="fas fa-swatchbook"></i>,
      
+        ],
+        product: [
+            'iPhone',
+            'iPad Air',
+            'iPad',
+            'iPad mini',
+            'Compare',
+            'Apple Pencil',
+            'Smart Keyboard',
+            'Accessories',
+            
         ]
     },
     {
@@ -77,6 +124,16 @@ export default [
         <i class="fab fa-apple"></i>,
     
      
+        ],
+        product: [
+            'iPhone',
+            'iPad Air',
+            'iPad',
+            'iPad mini',
+            'Compare',
+            'Apple Pencil',
+            
+            
         ]
     },
     {
@@ -91,6 +148,16 @@ export default [
         <i class="fab fa-itunes"></i>,
         <i class="fas fa-laptop-code"></i>,
       
+        ],
+        product: [
+            'iPhone',
+            'iPad Air',
+            'iPad',
+            'iPad mini',
+            'Compare',
+            'Apple Pencil',
+            'Apple Pencil'
+            
         ]
     }
    

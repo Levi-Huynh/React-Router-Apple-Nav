@@ -15,15 +15,24 @@ export default props => {
 
     return (
         <div className="App">
-        <div className='navbar'>
-        
-          
-          {nav.img}
-             
-      
+        <div className='navbar1'>
          
+         <div className='navIcons'>
+          {nav.img}
+          </div>
+          
+          <div className="wrapper">
+          {nav.product.map(prod => {
+
+return ( <div className="prodlist">   
+<div>{prod}</div>
         </div>
 
+)
+
+        })}
+        </div>
+      </div>
         <div>
           <h1>Hello. This is the Apple {nav.name}.</h1>
           </div>
