@@ -7,15 +7,15 @@ export default props => {
 
 
     return (
-    
-        <div className="navbar">
+        
+        <div className='navbar'>
         <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fab fa-apple"></i></NavLink>
         {props.apple.map(nav => {
 
      
         return (
          
-          <div >
+          <div className={props.menu? null : 'hidNav'}>
          
             <NavLink exact  activeClassName="activeNavButton" to={`/${nav.name}`}> {nav.name}</NavLink>
            
@@ -23,11 +23,22 @@ export default props => {
             
         )
       })}
-          <NavLink exact  activeClassName="activeNavButton" to={`/`}>Support</NavLink>
-          <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fas fa-search"></i></NavLink>
-          <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fas fa-shopping-bag"></i></NavLink>
-     </div>
-     
+          <NavLink exact className={props.menu? null : 'hidNav'} activeClassName="activeNavButton" to={`/`}>Support</NavLink>
+          
+
+     <NavLink exact  activeClassName="activeNavButton" to={`/`} onClick={props.toggleMenu.bind(this)} ><i class="fas fa-search"></i></NavLink>
+     <input
+          className={props.menu? 'hideInput': null}
+          placeholder="Search Support"
+          type="text"
+          >
+          
+          </input>
+          <NavLink exact className={props.menu? null : 'hidNav'}  activeClassName="activeNavButton" to={`/`}><i class="fas fa-shopping-bag"></i></NavLink>
+        <p onClick={props.toggleMenu.bind(this)} className={props.menu? 'hideInput': null}>Close Search</p>
+        
+        </div>
+
     )
   }
   

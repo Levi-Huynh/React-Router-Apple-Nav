@@ -34,3 +34,11 @@
 .NavButton{
  font-family: 'FontAwesome'; 
 }
+
+.hidNav{
+  display: none;
+}
+
+.hideInput{
+  display: none;
+}

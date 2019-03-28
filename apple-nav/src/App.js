@@ -12,16 +12,21 @@ class App extends Component {
  constructor(){
    super()
    this.state={
-     apple: AppleData
+     apple: AppleData,
+     showMenu: true
    }
    console.log(this.state.apple);
  }
+
+ menuShowToggle = () => {
+  this.setState({showMenu: !this.state.showMenu})
+}
 
   render() {
 
     return (
       <div className="App">
-        <Route path="/" render={ props => <NavBar apple={this.state.apple} {...props}/>}/>
+        <Route path="/" render={ props => <NavBar apple={this.state.apple} {...props} toggleMenu={this.menuShowToggle.bind(this)} menu={this.state.showMenu}/>}/>
         <Route exact path="/:name" render={ props => <SubNav apple={this.state.apple} {...props}/>}/>
         <Route path="/" component={home}/>
 
