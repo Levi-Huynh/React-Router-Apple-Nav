@@ -7,38 +7,41 @@ export default props => {
 
 
     return (
-        
+        <div>
         <div className='navbar'>
         <NavLink exact  activeClassName="activeNavButton" to={`/`}><i class="fab fa-apple"></i></NavLink>
         {props.apple.map(nav => {
 
-     
-        return (
+return (
          
           <div className={props.menu? null : 'hidNav'}>
-         
-            <NavLink exact  activeClassName="activeNavButton" to={`/${nav.name}`}> {nav.name}</NavLink>
-           
-              </div>
+         <NavLink exact  activeClassName="activeNavButton" to={`/${nav.name}`}> {nav.name}</NavLink>
+           </div>
             
         )
       })}
           <NavLink exact className={props.menu? null : 'hidNav'} activeClassName="activeNavButton" to={`/`}>Support</NavLink>
-          
-
-     <NavLink exact  activeClassName="activeNavButton" to={`/`} onClick={props.toggleMenu.bind(this)} ><i class="fas fa-search"></i></NavLink>
-     <input
+          <NavLink exact  activeClassName="activeNavButton" to={`/`} onClick={props.toggleMenu.bind(this)} ><i class="fas fa-search"></i></NavLink>
+          <input
           className={props.menu? 'hideInput': null}
           placeholder="Search Support"
           type="text"
           >
-          
           </input>
-          <NavLink exact className={props.menu? null : 'hidNav'}  activeClassName="activeNavButton" to={`/`}><i class="fas fa-shopping-bag"></i></NavLink>
-        <p onClick={props.toggleMenu.bind(this)} className={props.menu? 'hideInput': null}>Close Search</p>
+          <NavLink exact  onClick={props.shopToggle.bind(this)} className={props.menu? null : 'hidNav'}  activeClassName="activeNavButton" to={`/`}><i class="fas fa-shopping-bag"></i></NavLink>
+      <p onClick={props.toggleMenu.bind(this)} className={props.menu? 'hideInput': null}>Close Search</p>
         
         </div>
-
+      
+        <div className={props.shop? 'hidebag': 'showbag'}>
+        <div>Your Bag is empty.</div>
+        <p>Bag</p>
+        <p>Favorites</p>
+        <p>Orders</p>
+        <p>Accounts</p>
+        <p>Sign in</p>
+        </div>
+        </div>
     )
   }
   
