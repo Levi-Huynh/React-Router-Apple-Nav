@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.navbar1{
+  display: flex;
+  flex-direction: column;
+border: 1px solid black;
+  margin: 0;
+  padding: 0;
+ 
+
+
+}
+
+.navIcons{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 74px;
+  padding-top: 20px;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content:  space-between;
+}
+
+
+.prodlist{
+  
+
+  /* border: 1px solid black; */
+}
+
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  height: 54px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  border: 1px solid black;
+}
+  
+
+/* .navbar li a {
+  color: #4285f4;
+  text-decoration: none;
+  padding: 24px;
+  height: 16px;
+}
+
+.navbar li a.activeNavButton {
+  background-color: #4285f4;
+  color: white;
+  text-decoration: none;
+} */
+
+/* .NavButton{
+ font-family: 'FontAwesome'; 
+} */
+
+.hidNav{
+  display: none;
+}
+
+.hideInput{
+  display: none;
+}
+
+.hidebag{
+  display: none;
+}
+
+.showbag{
+margin-left: 70%;
+  height: 300px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  position: absolute;
+ 
+}
+
+.home{
+  z-index: -1;
+}
+
+input{
+  width: 40%;
+}
+
+/* .navbar1Cont{
+  display: flex;
+  flex-direction: row;
+  
+} */
+
+
+
+
+/* ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li{
+  list-style-type: none;
+  word-spacing: 1cm;
+} */
+
